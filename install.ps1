@@ -62,6 +62,14 @@ refreshenv
 Write-Host "Installing yarn ..."
 cmd.exe /c "npm install -g yarn"
 
+# -- Cài Flutter
+Write-Host "Installing Flutter ..." -Foreground "Green"
+choco install flutter
+
+# --- Cài TeamViewer
+Write-Host "Installing TeamViewer ..." -Foreground "Blue"
+choco install teamviewer
+
 # --- Cài OpenJDK (java)
 Write-Host "Installing OpenJDK (java) ..." - Foreground "Green"
 choco install -y openjdk
