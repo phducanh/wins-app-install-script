@@ -64,11 +64,11 @@ cmd.exe /c "npm install -g yarn"
 
 # -- Cài Flutter
 Write-Host "Installing Flutter ..." -Foreground "Green"
-choco install flutter
+choco install -y flutter
 
 # --- Cài TeamViewer
 Write-Host "Installing TeamViewer ..." -Foreground "Blue"
-choco install teamviewer
+choco install -y teamviewer
 
 # --- Cài OpenJDK (java)
 Write-Host "Installing OpenJDK (java) ..." - Foreground "Green"
