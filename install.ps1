@@ -70,7 +70,7 @@ choco install -y fvm
 Write-Host "Installing Flutter ..." -Foreground "Green"
 cmd.exe /c "fvm install 2.10.5"
 refreshenv
-cmd.exe /c "fvm use 2.10.5"
+cmd.exe /c "fvm use --force 2.10.5"
 
 # --- Cài TeamViewer
 Write-Host "Installing TeamViewer ..." -Foreground "Blue"
