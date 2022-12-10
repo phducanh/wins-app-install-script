@@ -62,9 +62,15 @@ refreshenv
 Write-Host "Installing yarn ..."
 cmd.exe /c "npm install -g yarn"
 
-# -- Cài Flutter
+# --- Cài fvm
+Write-Host "Installing fvm ..."
+choco install -y fvm
+
+# --- Cài flutter  2.10.5
 Write-Host "Installing Flutter ..." -Foreground "Green"
-choco install -y flutter
+cmd.exe /c "fvm install 2.10.5"
+refreshenv
+cmd.exe /c "fvm use 2.10.5"
 
 # --- Cài TeamViewer
 Write-Host "Installing TeamViewer ..." -Foreground "Blue"
